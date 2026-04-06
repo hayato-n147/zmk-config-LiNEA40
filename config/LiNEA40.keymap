@@ -8,10 +8,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define NUM_FUNC      1
-#define MARK_CURSOR  2
-#define MOUSE         3
-#define WIRELESS      4
+#define L_NUM_FUNC      1
+#define L_MARK_CURSOR  2
+#define L_MOUSE         3
+#define L_WIRELESS      4
 
 SCROLL = 5;
 
@@ -53,11 +53,11 @@ SCROLL = 5;
 };
 
 &trackball_listener {
+    input-processors = <&zip_temp_layer L_MOUSE 8000>;
     scroller {
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };

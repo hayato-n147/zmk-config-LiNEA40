@@ -53,10 +53,6 @@
 };
 
 &trackball_listener {
-    /* 追加：トラックボールを動かしたら MOUSE レイヤーへ */
-
-    input-processors = <&zip_temp_layer MOUSE 8000>;
-
     scroller {
         layers = <SCROLL>;
         input-processors =

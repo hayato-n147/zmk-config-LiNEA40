@@ -13,6 +13,8 @@
 #define MOUSE         3
 #define WIRELESS      4
 
+SCROLL = 5;
+
 //mouse cursol
 
 &mmv {

@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define NUM_FUNC      1
-#define MARK_CURSOR  2
+#define MARK_CURSOR   2
 #define MOUSE         3
 #define WIRELESS      4
 
@@ -52,8 +52,6 @@
 };
 
 &trackball_listener {
-    //input-processors = < &zip_temp_layer MOUSE 800 >;
-
     scroller {
         layers = <MARK_CURSOR>;
         input-processors =

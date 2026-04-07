@@ -52,7 +52,7 @@
 };
 
 &trackball_listener {
-    input-processors = < &zip_temp_layer MOUSE 800 >;
+    //input-processors = < &zip_temp_layer MOUSE 800 >;
 
     scroller {
         layers = <MARK_CURSOR>;

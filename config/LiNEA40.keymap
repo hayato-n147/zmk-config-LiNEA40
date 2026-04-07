@@ -13,7 +13,6 @@
 #define MOUSE         3
 #define WIRELESS      4
 
-
 //mouse cursol
 
 &mmv {
@@ -54,12 +53,12 @@
 &trackball_listener {
     scroller {
         layers = <MARK_CURSOR>;
-        input-processors =
-            < &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-              &zip_xy_to_scroll_mapper >;
+        input-processors = <
+ &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
+              &zip_xy_to_scroll_mapper
+        >;
     };
 };
-
 
 / {
     combos {
@@ -74,23 +73,28 @@
             bindings = <&mo 4>;
             key-positions = <38 39>;
         };
+
+        mouse_middle {
+            bindings = <&mkp MB3>;
+            key-positions = <17 18>;
+            layers = <3>;
+        };
     };
 
+    behaviors {
+        re_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = < &kp &kp >;
+        };
 
-behaviors {
-    re_kp: sensor_rotate_kp {
-        compatible = "zmk,behavior-sensor-rotate-var";
-        #sensor-binding-cells = <2>;
-        bindings = < &kp &kp >;
+        mouse_scrl: mouse_wheel_scrl {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = < &msc &msc >;
+            tap-ms = <20>;
+        };
     };
-
-    mouse_scrl: mouse_wheel_scrl {
-        compatible = "zmk,behavior-sensor-rotate-var";
-        #sensor-binding-cells = <2>;
-        bindings = < &msc &msc >;
-        tap-ms = <20>;
-    };
-};
 
     keymap {
         compatible = "zmk,keymap";
@@ -114,7 +118,7 @@ behaviors {
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                      &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         MARK_CURSOR {
@@ -125,18 +129,18 @@ behaviors {
 &trans        &trans           &trans             &trans            &trans                &kp DELETE    &trans  &trans                                    &trans           &trans            &trans
             >;
 
-            sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans         &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans                    &trans         &trans  &mkp LCLK  &mkp RCLK  &trans
-&trans  &trans  &trans  &trans  &trans                    &kp LS(LG(S))  &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                 &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                    &trans         &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                    &trans         &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5
+&trans  &trans  &trans  &trans  &trans                    &kp LS(LG(S))  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&re_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         WIRELESS {

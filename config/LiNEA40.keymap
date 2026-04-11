@@ -135,7 +135,7 @@
 &kp QUESTION  &kp EXCLAMATION  &kp AMPERSAND      &kp PIPE          &kp BACKSLASH                               &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp PLUS          &kp AT_SIGN
 &kp HASH      &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT           &kp SEMICOLON                               &kp LEFT_ARROW         &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW   &kp MINUS
 &kp N0        &kp LESS_THAN    &kp LEFT_BRACE     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp DOLLAR
-&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &trans           &trans            &trans
+&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &batt_type       &trans            &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -149,7 +149,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&re_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         WIRELESS {
@@ -157,7 +157,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
 &trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &kp A         &trans        &bt BT_CLR_ALL
+&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;

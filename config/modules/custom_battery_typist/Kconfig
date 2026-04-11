@@ -2,4 +2,4 @@ config CUSTOM_BATTERY_TYPIST
     bool "Enable battery level typing behavior"
     default y
     depends on ZMK_BATTERY_REPORTING
-    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_C
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL

@@ -65,6 +65,13 @@
 };
 
 / {
+    battery_type: battery_type {
+        compatible = "zmk,behavior-battery-type";
+        #binding-cells = <0>;
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
 

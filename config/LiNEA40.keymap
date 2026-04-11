@@ -135,7 +135,7 @@
 &kp QUESTION  &kp EXCLAMATION  &kp AMPERSAND      &kp PIPE          &kp BACKSLASH                               &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp PLUS          &kp AT_SIGN
 &kp HASH      &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT           &kp SEMICOLON                               &kp LEFT_ARROW         &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW   &kp MINUS
 &kp N0        &kp LESS_THAN    &kp LEFT_BRACE     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp DOLLAR
-&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &trans           &trans            &trans
+&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &batt_type       &trans            &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;

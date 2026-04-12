@@ -79,9 +79,8 @@
         };
 
         mouse_middle {
-            bindings = <&mkp MB3>;
+            bindings = <&mkp MB1>;
             key-positions = <17 18>;
-            layers = <3>;
         };
 
         input_wq {

@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_BS";
             #binding-cells = <0>;
-            bindings = <&lt 1 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&lt 1 BACKSPACE>, <&mt BACKSPACE BACKSPACE>;
         };
     };
 
@@ -123,6 +123,27 @@
             bindings = <&kp SQT &kp W &kp Q>;
             label = "WQ";
         };
+
+        windows: windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N5 &kp N2 &kp N2 &kp N5 &kp N3 &kp N0 &kp LS(N) &kp K &kp M &kp R &kp LS(NUMBER_4) &kp N1 &kp N4 &kp N7>;
+            label = "WINDOWS";
+        };
+
+        linux: linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp B &kp LS(MINUS) &kp LS(Y) &kp LS(G) &kp N2 &kp P &kp LS(RBKT)>;
+            label = "LINUX";
+        };
+
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp A &kp Y &kp A &kp T &kp O &kp MINUS &kp N &kp DOT &kp N &kp A &kp K &kp A &kp M &kp U &kp R &kp A &kp LBKT &kp A &kp D &kp V &kp A &kp N &kp T &kp E &kp S &kp T &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL";
+        };
     };
 
     keymap {
@@ -130,10 +151,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp L                 &kp U             &kp F             &mt LEFT_GUI PERIOD                                              &mt LEFT_GUI SLASH  &kp W        &kp R                &kp Y                 &kp P
-&kp E          &mt LC(LEFT_SHIFT) I  &mt LEFT_ALT A    &mt LEFT_SHIFT O  &mt LG(LEFT_SHIFT) COLON                                         &mt LG(LCTRL) K     &mt LCTRL T  &mt LEFT_ALT N       &mt LC(LEFT_SHIFT) S  &kp H
-&kp Z          &kp X                 &kp C             &kp V             &kp COMMA                                                        &kp G               &kp D        &kp M                &kp J                 &kp B
-&mt LCTRL ESC  &kp LEFT_WIN          &kp INT_MUHENKAN  &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &kt INTERNATIONAL_4  &kp DELETE            &kp MINUS
+&kp Q    &kp L                 &kp U           &kp F             &mt LEFT_GUI PERIOD                                              &mt LEFT_GUI SLASH  &kp W        &kp R           &kp Y                 &kp P
+&kp E    &mt LC(LEFT_SHIFT) I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &mt LG(LEFT_SHIFT) COLON                                         &mt LG(LCTRL) K     &mt LCTRL T  &mt LEFT_ALT N  &mt LC(LEFT_SHIFT) S  &kp H
+&kp Z    &kp X                 &kp C           &kp V             &kp COMMA                                                        &kp G               &kp D        &kp M           &kp J                 &kp B
+&kp ESC  &kp LEFT_WIN          &trans          &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &mail           &trans                &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -144,7 +165,7 @@
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                &kp SLASH                &kp EQUAL     &kp ASTERISK  &kp PLUS      &kp PERCENT
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &kp NUMBER_6             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F6        &kt F7        &kp F8        &kp F9        &kp F10                               &kp HOME                 &kp TILDE     &kp CARET     &kp PERIOD    &kp END
-&trans        &trans        &trans        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &trans        &windows      &linux
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

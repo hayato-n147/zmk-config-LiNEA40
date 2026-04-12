@@ -29,7 +29,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 /* 出力フォーマット定義 */
 #define FORMAT_PREFIX   "L="
-#define FORMAT_MIDDLE   "%/R="
+#define FORMAT_MIDDLE   "% R="
 #define FORMAT_SUFFIX   "%"
 #define FORMAT_NO_DATA  "--"
 
@@ -66,7 +66,8 @@ static const struct char_keycode CHAR_MAP[] = {
     ['L'] = { .keycode = HID_KEY_L, .shift = true },
     ['R'] = { .keycode = HID_KEY_R, .shift = true },
     [' '] = { .keycode = HID_KEY_SPACE, .shift = false },
-    [':'] = { .keycode = HID_KEY_SEMICOLON, .shift = true },  /* US: Shift+; */
+    [':'] = { .keycode = HID_KEY_COLON, .shift = true },  /* US: Shift+; */
+    ['='] = { .keycode = HID_KEY_EQUAL, .shift = false },
     ['%'] = { .keycode = HID_KEY_5, .shift = true },           /* US: Shift+5 */
     ['-'] = { .keycode = HID_KEY_MINUS, .shift = false },
 };

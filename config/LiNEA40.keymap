@@ -83,6 +83,11 @@
             key-positions = <17 18>;
             layers = <3>;
         };
+
+        input_wq {
+            bindings = <&input_wq>;
+            key-positions = <27 26>;
+        };
     };
 
     behaviors {
@@ -102,6 +107,15 @@
         batt_type: batt_type {
             compatible = "zmk,behavior-battery-type";
             #binding-cells = <0>;
+        };
+    };
+
+    macros {
+        input_wq: wq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp W &kp Q>;
+            label = "WQ";
         };
     };
 

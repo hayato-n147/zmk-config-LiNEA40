@@ -138,7 +138,7 @@
             label = "LINUX";
         };
 
-        mail: mail {
+        input_mail: mail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp H &kp A &kp Y &kp A &kp T &kp O &kp MINUS &kp N &kp DOT &kp N &kp A &kp K &kp A &kp M &kp U &kp R &kp A &kp LBKT &kp A &kp D &kp V &kp A &kp N &kp T &kp E &kp S &kp T &kp DOT &kp C &kp O &kp M>;
@@ -154,7 +154,7 @@
 &kp Q    &kp L                 &kp U           &kp F             &mt LEFT_GUI PERIOD                                              &mt LEFT_GUI SLASH  &kp W        &kp R           &kp Y                 &kp P
 &kp E    &mt LC(LEFT_SHIFT) I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &mt LG(LEFT_SHIFT) COLON                                         &mt LG(LCTRL) K     &mt LCTRL T  &mt LEFT_ALT N  &mt LC(LEFT_SHIFT) S  &kp H
 &kp Z    &kp X                 &kp C           &kp V             &kp COMMA                                                        &kp G               &kp D        &kp M           &kp J                 &kp B
-&kp ESC  &kp LEFT_WIN          &trans          &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &mail           &trans                &kp MINUS
+&kp ESC  &kp LEFT_WIN          &trans          &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &input_mail     &trans                &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;

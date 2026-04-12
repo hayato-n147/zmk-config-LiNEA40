@@ -67,7 +67,7 @@ static const struct char_keycode CHAR_MAP[] = {
     ['R'] = { .keycode = HID_KEY_R, .shift = true },
     [' '] = { .keycode = HID_KEY_SPACE, .shift = false },
     [':'] = { .keycode = HID_KEY_COLON, .shift = true },  /* US: Shift+; */
-    ['='] = { .keycode = HID_KEY_EQUAL, .shift = false },
+    ['='] = { .keycode = HID_KEY_MINUS, .shift = true },
     ['%'] = { .keycode = HID_KEY_5, .shift = true },           /* US: Shift+5 */
     ['-'] = { .keycode = HID_KEY_MINUS, .shift = false },
 };

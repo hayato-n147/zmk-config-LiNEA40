@@ -107,6 +107,13 @@
             compatible = "zmk,behavior-battery-type";
             #binding-cells = <0>;
         };
+
+        layer_BS: layer_BS {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_BS";
+            #binding-cells = <0>;
+            bindings = <&lt 1 BACKSPACE>, <&kp BACKSPACE>;
+        };
     };
 
     macros {
@@ -123,10 +130,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp L                 &kp U             &kp F             &mt LEFT_GUI PERIOD                                                    &mt LEFT_GUI SLASH  &kp W        &kp R                &kp Y                 &kp P
-&kp E          &mt LC(LEFT_SHIFT) I  &mt LEFT_ALT A    &mt LEFT_SHIFT O  &mt LG(LEFT_SHIFT) COLON                                               &mt LG(LCTRL) K     &mt LCTRL T  &mt LEFT_ALT N       &mt LC(LEFT_SHIFT) S  &kp H
-&kp Z          &kp X                 &kp C             &kp V             &kp COMMA                                                              &kp G               &kp D        &kp M                &kp J                 &kp B
-&mt LCTRL ESC  &kp LEFT_WIN          &kp INT_MUHENKAN  &kp INS           &lt 1 TAB                 &mt LCTRL BACKSPACE    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &kt INTERNATIONAL_4  &kp DELETE            &kp MINUS
+&kp Q          &kp L                 &kp U             &kp F             &mt LEFT_GUI PERIOD                                              &mt LEFT_GUI SLASH  &kp W        &kp R                &kp Y                 &kp P
+&kp E          &mt LC(LEFT_SHIFT) I  &mt LEFT_ALT A    &mt LEFT_SHIFT O  &mt LG(LEFT_SHIFT) COLON                                         &mt LG(LCTRL) K     &mt LCTRL T  &mt LEFT_ALT N       &mt LC(LEFT_SHIFT) S  &kp H
+&kp Z          &kp X                 &kp C             &kp V             &kp COMMA                                                        &kp G               &kp D        &kp M                &kp J                 &kp B
+&mt LCTRL ESC  &kp LEFT_WIN          &kp INT_MUHENKAN  &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &kt INTERNATIONAL_4  &kp DELETE            &kp MINUS
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;

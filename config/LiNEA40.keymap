@@ -165,7 +165,7 @@
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                &kp SLASH                &kp EQUAL     &kp ASTERISK  &kp PLUS      &kp PERCENT
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &kp NUMBER_6             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F6        &kt F7        &kp F8        &kp F9        &kp F10                               &kp HOME                 &kp TILDE     &kp CARET     &kp PERIOD    &kp END
-&trans        &trans        &trans        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &trans        &windows      &linux
+&trans        &windows      &linux        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &trans        &windows      &linux
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

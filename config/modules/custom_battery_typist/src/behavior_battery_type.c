@@ -25,7 +25,7 @@
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 /* キーストローク間のディレイ（ms）。BLEで文字落ちする場合は値を大きくする */
-#define KEYSTROKE_DELAY_MS 50
+#define KEYSTROKE_DELAY_MS 30
 
 /* 出力フォーマット定義 */
 #define FORMAT_PREFIX   "L="

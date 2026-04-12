@@ -114,7 +114,7 @@
         input_wq: wq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp W &kp Q>;
+            bindings = <&kp SQT &kp W &kp Q>;
             label = "WQ";
         };
     };

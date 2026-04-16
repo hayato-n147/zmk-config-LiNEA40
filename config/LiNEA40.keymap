@@ -148,7 +148,7 @@
         view_battery: view_battery {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT4 &batt_type>;
+            bindings = <&kp LANG1 &batt_type>;
             label = "VIEW_BATTERY";
         };
     };

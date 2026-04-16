@@ -175,7 +175,7 @@
 &trans        &windows      &linux        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &input_mail   &windows      &linux
             >;
 
-            sensor-bindings = <&re_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         MARK_CURSOR {

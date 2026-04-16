@@ -144,6 +144,13 @@
             bindings = <&kp H &kp A &kp Y &kp A &kp T &kp O &kp MINUS &kp N &kp DOT &kp N &kp A &kp K &kp A &kp M &kp U &kp R &kp A &kp LBKT &kp A &kp D &kp V &kp A &kp N &kp T &kp E &kp S &kp T &kp DOT &kp C &kp O &kp M>;
             label = "MAIL";
         };
+
+        view_battery: view_battery {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT4 &batt_type>;
+            label = "VIEW_BATTERY";
+        };
     };
 
     keymap {
@@ -154,10 +161,10 @@
 &kp Q    &kp L                 &kp U           &kp F             &mt LEFT_GUI PERIOD                                              &mt LEFT_GUI SLASH  &kp W        &kp R           &kp Y                 &kp P
 &kp E    &mt LC(LEFT_SHIFT) I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &mt LG(LEFT_SHIFT) COLON                                         &mt LG(LCTRL) K     &mt LCTRL T  &mt LEFT_ALT N  &mt LC(LEFT_SHIFT) S  &kp H
 &kp Z    &kp X                 &kp C           &kp V             &kp COMMA                                                        &kp G               &kp D        &kp M           &kp J                 &kp B
-&kp ESC  &kp LEFT_WIN          &trans          &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &input_mail     &trans                &kp MINUS
+&kp ESC  &kp LEFT_WIN          &trans          &kp INS           &layer_BS                 &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                      &trans          &trans                &kp MINUS
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         NUM_FUNC {
@@ -165,10 +172,10 @@
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                &kp SLASH                &kp EQUAL     &kp ASTERISK  &kp PLUS      &kp PERCENT
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &kp NUMBER_6             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F6        &kt F7        &kp F8        &kp F9        &kp F10                               &kp HOME                 &kp TILDE     &kp CARET     &kp PERIOD    &kp END
-&trans        &windows      &linux        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &trans        &windows      &linux
+&trans        &windows      &linux        &trans        &trans        &trans    &kp LEFT_GUI  &kp LANG_ZENKAKUHANKAKU                &input_mail   &windows      &linux
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
         };
 
         MARK_CURSOR {
@@ -176,10 +183,10 @@
 &kp QUESTION  &kp EXCLAMATION  &kp AMPERSAND      &kp PIPE          &kp BACKSLASH                               &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp PLUS          &kp AT_SIGN
 &kp HASH      &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT           &kp SEMICOLON                               &kp LEFT_ARROW         &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW   &kp MINUS
 &kp N0        &kp LESS_THAN    &kp LEFT_BRACE     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp DOLLAR
-&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &batt_type       &trans            &trans
+&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &view_battery    &trans            &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         MOUSE {
@@ -201,7 +208,7 @@
 &trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                 &trans         &trans         &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };

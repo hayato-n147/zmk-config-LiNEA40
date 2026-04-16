@@ -127,21 +127,21 @@
         windows: windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N5 &kp N2 &kp N2 &kp N5 &kp N3 &kp N0 &kp LS(N) &kp K &kp M &kp R &kp LS(NUMBER_4) &kp N1 &kp N4 &kp N7>;
+            bindings = <&kp INT5 &kp N1 &kp N5 &kp N2 &kp N2 &kp N5 &kp N3 &kp N0 &kp LS(N) &kp K &kp M &kp R &kp LS(NUMBER_4) &kp N1 &kp N4 &kp N7>;
             label = "WINDOWS";
         };
 
         linux: linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N6 &kp B &kp LS(MINUS) &kp LS(Y) &kp LS(G) &kp N2 &kp P &kp LS(RBKT)>;
+            bindings = <&kp INT5 &kp N6 &kp B &kp LS(MINUS) &kp LS(Y) &kp LS(G) &kp N2 &kp P &kp LS(RBKT)>;
             label = "LINUX";
         };
 
         input_mail: mail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp A &kp Y &kp A &kp T &kp O &kp MINUS &kp N &kp DOT &kp N &kp A &kp K &kp A &kp M &kp U &kp R &kp A &kp LBKT &kp A &kp D &kp V &kp A &kp N &kp T &kp E &kp S &kp T &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp INT5 &kp H &kp A &kp Y &kp A &kp T &kp O &kp MINUS &kp N &kp DOT &kp N &kp A &kp K &kp A &kp M &kp U &kp R &kp A &kp LBKT &kp A &kp D &kp V &kp A &kp N &kp T &kp E &kp S &kp T &kp DOT &kp C &kp O &kp M>;
             label = "MAIL";
         };
 

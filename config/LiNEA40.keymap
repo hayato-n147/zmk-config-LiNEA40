@@ -46,8 +46,8 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <MOUSE>;
-        input-processors = <&zip_wheel_scaler 2 1>; //スクロールを2倍速にする
+        layers = <WIRELESS>;
+        input-processors = <&zip_wheel_scaler 1 1>; //スクロールを2倍速にする
     };
 };
 

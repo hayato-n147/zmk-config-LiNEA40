@@ -46,8 +46,8 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <NUM_FUNC>;
-        input-processors = <&zip_wheel_scaler 3 1>; //スクロールを3倍速にする
+        layers = <MOUSE>;
+        input-processors = <&zip_wheel_scaler 2 1>; //スクロールを2倍速にする
     };
 };
 
@@ -55,7 +55,7 @@
     input-processors = <&mouse_runtime_input_processor>;
 
     scroller {
-        layers = <MARK_CURSOR>;
+        layers = <NUM_FUNC>;
         input-processors = <
             &scroll_runtime_input_processor
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT

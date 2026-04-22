@@ -100,6 +100,11 @@
             key-positions = <18 17>;
             layers = <3>;
         };
+
+        printSC {
+            bindings = <&kp LS(LG(S))>;
+            key-positions = <27 28>;
+        };
     };
 
     behaviors {
@@ -204,10 +209,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans         &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans                    &trans         &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5
-&trans  &trans  &trans  &trans  &trans                    &kp LS(LG(S))  &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;

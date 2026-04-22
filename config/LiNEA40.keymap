@@ -71,6 +71,7 @@
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         BLUETOOTH {
@@ -84,13 +85,12 @@
         };
 
         mouse_left {
-            bindings = <&mkp LCLK>;
+            bindings = <&mkp MB1>;
             key-positions = <16 17>;
-            layers = <3>;
         };
 
         mouse_right {
-            bindings = <&mkp RCLK>;
+            bindings = <&mkp MB2>;
             key-positions = <18 19>;
             layers = <3>;
         };
@@ -98,7 +98,6 @@
         mouse_middle {
             bindings = <&mkp MB3>;
             key-positions = <18 17>;
-            layers = <3>;
         };
 
         printSC {

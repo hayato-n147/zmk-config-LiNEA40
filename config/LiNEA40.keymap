@@ -84,13 +84,13 @@
         };
 
         mouse_left {
-            bindings = <&mkp MB1>;
+            bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             layers = <3>;
         };
 
         mouse_right {
-            bindings = <&mkp MB2>;
+            bindings = <&mkp RCLK>;
             key-positions = <18 19>;
             layers = <3>;
         };

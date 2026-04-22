@@ -85,7 +85,7 @@
         };
 
         mouse_left {
-            bindings = <&mkp MB1>;
+            bindings = <&mkp MB3>;
             key-positions = <16 17>;
         };
 
@@ -96,7 +96,7 @@
         };
 
         mouse_middle {
-            bindings = <&mkp MB3>;
+            bindings = <&mkp MB1>;
             key-positions = <18 17>;
         };
 

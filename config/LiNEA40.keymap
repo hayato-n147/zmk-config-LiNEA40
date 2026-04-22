@@ -85,19 +85,8 @@
         };
 
         mouse_left {
-            bindings = <&mkp MB3>;
-            key-positions = <16 17>;
-        };
-
-        mouse_right {
-            bindings = <&mkp MB2>;
-            key-positions = <18 19>;
-            layers = <3>;
-        };
-
-        mouse_middle {
             bindings = <&mkp MB1>;
-            key-positions = <18 17>;
+            key-positions = <17 18>;
         };
 
         printSC {

@@ -92,6 +92,7 @@
         printSC {
             bindings = <&kp LS(LG(S))>;
             key-positions = <27 28>;
+            layers = <3>;
         };
     };
 

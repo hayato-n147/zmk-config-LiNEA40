@@ -102,7 +102,7 @@
 
         kana {
             bindings = <&kp INT2>;
-            key-positions = <22 23>;
+            key-positions = <22 23 21>;
         };
     };
 

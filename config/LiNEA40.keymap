@@ -94,6 +94,16 @@
             key-positions = <27 28>;
             layers = <3>;
         };
+
+        english {
+            bindings = <&kp LANG2>;
+            key-positions = <12 13>;
+        };
+
+        kana {
+            bindings = <&kp INT2>;
+            key-positions = <22 23>;
+        };
     };
 
     behaviors {

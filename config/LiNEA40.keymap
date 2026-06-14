@@ -96,7 +96,7 @@
         };
 
         english {
-            bindings = <&kp LANG2>;
+            bindings = <&kp INT5>;
             key-positions = <12 13>;
         };
 

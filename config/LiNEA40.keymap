@@ -120,7 +120,7 @@
         input_wq: wq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp W &kp Q>;
+            bindings = <&kp INT5 &kp SQT &kp W &kp Q>;
             label = "WQ";
         };
 

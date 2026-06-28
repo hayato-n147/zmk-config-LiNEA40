@@ -101,13 +101,13 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp L         &kp U             &kp F    &kp PERIOD                                               &kp SLASH    &kp W  &kp R                &kp Y       &kp P
-&kp E          &kp I         &kp A             &kp O    &kp COLON                                                &kp K        &kp T  &kp N                &kp S       &kp H
-&kp Z          &kp X         &kp C             &kp V    &kp COMMA                                                &kp G        &kp D  &kp M                &kp J       &kp B
-&mt LCTRL ESC  &kp LEFT_WIN  &kp INT_MUHENKAN  &kp INS  &lt 1 TAB   &mt LCTRL BACKSPACE    &mt LEFT_SHIFT ENTER  &lt 2 SPACE         &kt INTERNATIONAL_4  &kp DELETE  &kp MINUS
+&kp Q       &kp L            &kp U             &kp F             &mt LEFT_GUI PERIOD                                            &mt RIGHT_GUI SLASH  &kp W                &kp R                &kp Y                  &kp P
+&kp E       &kp I            &kp A             &kp O             &kp COLON                                                      &kp K                &kp T                &kp N                &kp S                  &kp H
+&kp Z       &mt LS(LCTRL) X  &mt LEFT_ALT C    &mt LEFT_SHIFT V  &mt LS(LEFT_GUI) COMMA                                         &mt LC(RIGHT_GUI) G  &mt RIGHT_CONTROL D  &mt RIGHT_ALT M      &mt LC(RIGHT_SHIFT) J  &kp B
+&kp DELETE  &kp LEFT_WIN     &kp INT_MUHENKAN  &kp INS           &lt 1 BACKSPACE         &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                               &kt INTERNATIONAL_4  &kp INT_MUHENKAN       &kp MINUS
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         NUM_FUNC {
@@ -129,7 +129,7 @@
 &trans        &trans           &trans             &trans            &trans                &kp DELETE    &trans  &trans                                    &trans           &trans            &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         MOUSE {
@@ -140,7 +140,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&re_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         WIRELESS {
@@ -151,7 +151,7 @@
 &trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };

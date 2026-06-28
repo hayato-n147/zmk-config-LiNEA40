@@ -167,7 +167,7 @@
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                 &kp MINUS     &kp EQUAL     &kp ASTERISK  &kp PLUS      &kp PERCENT
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F6        &kt F7        &kp F8        &kp F9        &kp F10                                &kp HOME      &kp TILDE     &kp CARET     &kp PERIOD    &kp END
-&trans        &trans        &trans        &trans        &trans        &trans    &kp RIGHT_GUI  &kp LANG5                   &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &kp RIGHT_GUI  &kp LANG5                   &input_mail   &windows      &linux
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -178,7 +178,7 @@
 &kp QUESTION  &kp EXCLAMATION  &kp AMPERSAND      &kp PIPE          &kp BACKSLASH                               &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp PLUS          &kp AT_SIGN
 &kp HASH      &kp GRAVE        &kp DOUBLE_QUOTES  &kp SQT           &kp SEMICOLON                               &kp LEFT_ARROW         &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW   &kp MINUS
 &kp NUMBER_0  &kp LESS_THAN    &kp LEFT_BRACE     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp DOLLAR
-&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &trans           &trans            &trans
+&trans        &trans           &trans             &trans            &kp BACKSPACE         &kp DELETE    &trans  &trans                                    &input_mail      &windows          &linux
             >;
 
             sensor-bindings = <&inc_dec_kp LS(RIGHT_ARROW) LS(LEFT_ARROW)>;

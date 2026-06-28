@@ -140,12 +140,12 @@
             label = "MAIL";
         };
 
-        view_battery: view_battery {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp INT5 &batt_type>;
-            label = "VIEW_BATTERY";
-        };
+//        view_battery: view_battery {
+//            compatible = "zmk,behavior-macro";
+//            #binding-cells = <0>;
+//            bindings = <&kp INT5 &batt_type>;
+//            label = "VIEW_BATTERY";
+//        };
     };
 
 

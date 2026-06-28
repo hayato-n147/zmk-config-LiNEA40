@@ -81,18 +81,23 @@
         };
 
         muhenkan {
-            bindings = <&kp INT5>;
+            bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
         };
 
         kana {
-            bindings = <&kp INT_HENKAN>;
+            bindings = <&kp INTERNATIONAL_4>;
             key-positions = <12 11>;
         };
 
         Screenshot {
             bindings = <&kp LS(LG(S))>;
             key-positions = <27 28>;
+        };
+
+        wp {
+            bindings = <&input_wq>;
+            key-positions = <26 27>;
         };
     };
 
@@ -156,7 +161,7 @@
 &kp Q       &kp L            &kp U           &kp F             &mt LEFT_GUI PERIOD                                            &mt RIGHT_GUI SLASH  &kp W                &kp R                &kp Y                  &kp P
 &kp E       &kp I            &kp A           &kp O             &kp COLON                                                      &kp K                &kp T                &kp N                &kp S                  &kp H
 &kp Z       &mt LS(LCTRL) X  &mt LEFT_ALT C  &mt LEFT_SHIFT V  &mt LS(LEFT_GUI) COMMA                                         &mt LC(RIGHT_GUI) G  &mt RIGHT_CONTROL D  &mt RIGHT_ALT M      &mt LC(RIGHT_SHIFT) J  &kp B
-&kp DELETE  &kp LEFT_WIN     &kp INT5        &kp INS           &lt 1 BACKSPACE         &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                               &kt INTERNATIONAL_4  &kp INT5               &kp MINUS
+&kp DELETE  &kp LEFT_WIN     &kp INT5        &kp INS           &lt 1 BACKSPACE         &mt LCTRL TAB    &mt LEFT_SHIFT ENTER  &lt 2 SPACE                               &kp INTERNATIONAL_4  &kp INT5               &kp MINUS
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;

@@ -87,7 +87,7 @@
 
         kana {
             bindings = <&kp INTERNATIONAL_4>;
-            key-positions = <12 11>;
+            key-positions = <2 3>;
         };
 
         Screenshot {

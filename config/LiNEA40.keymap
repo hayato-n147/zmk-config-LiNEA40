@@ -65,7 +65,7 @@
         compatible = "zmk,combos";
 
         Escape {
-            bindings = <&kp ESCAPE>;
+            bindings = <&esc_int5>;
             key-positions = <16 17>;
         };
 
@@ -143,6 +143,13 @@
             #binding-cells = <0>;
             bindings = <&kp INT5 &kp H &kp A &kp Y &kp A &kp T &kp O &kp MINUS &kp N &kp DOT &kp N &kp A &kp K &kp A &kp M &kp U &kp R &kp A &kp LBKT &kp A &kp D &kp V &kp A &kp N &kp T &kp E &kp S &kp T &kp DOT &kp C &kp O &kp M>;
             label = "MAIL";
+        };
+
+        esc_int5: esc_int5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT5 &kp ESC>;
+            label = "ESC_INT5";
         };
 
         //        view_battery: view_battery {

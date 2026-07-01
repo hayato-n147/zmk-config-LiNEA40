@@ -148,7 +148,7 @@
         esc_int5: esc_int5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT5 &kp ESC>;
+            bindings = <&kp ESC &kp INT5>;
             label = "ESC_INT5";
         };
 

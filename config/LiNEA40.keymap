@@ -64,7 +64,7 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
+        Esc_Int5 {
             bindings = <&esc_int5>;
             key-positions = <16 17>;
         };
@@ -98,6 +98,11 @@
         wp {
             bindings = <&input_wq>;
             key-positions = <26 27>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <6 7>;
         };
     };
 
